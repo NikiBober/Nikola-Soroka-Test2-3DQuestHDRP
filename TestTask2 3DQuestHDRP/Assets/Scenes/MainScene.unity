@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 4156.1978, g: 2484.8862, b: 1995.566, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -31255,18 +31255,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4111328061247126, guid: e9569c7e13e51264082910415a120d38, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114290622220327500, guid: e9569c7e13e51264082910415a120d38, type: 3}
-      propertyPath: playerScanner.detectionAngle
-      value: 180
-      objectReference: {fileID: 0}
-    - target: {fileID: 114290622220327500, guid: e9569c7e13e51264082910415a120d38, type: 3}
-      propertyPath: playerScanner.detectionRadius
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 195733995024529676, guid: e9569c7e13e51264082910415a120d38, type: 3}
-      propertyPath: m_AgentTypeID
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
