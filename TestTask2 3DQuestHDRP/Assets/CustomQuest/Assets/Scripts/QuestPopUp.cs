@@ -140,6 +140,7 @@ public class QuestPopUp : MonoBehaviour
     public void AcceptQuest()
     {
         QuestHandler.Instance.dialogueCamera.SetActive(false);
+        QuestHandler.Instance.isQuestAccepted = true;
 
         QuestHandler.Instance.QuestsDiscovered(quest, player);
         Destroy(this.gameObject);

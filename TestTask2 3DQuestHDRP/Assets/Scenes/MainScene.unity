@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 4156.1978, g: 2484.8862, b: 1995.566, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1856,7 +1856,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 808138633}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &118871075
 AudioSource:
@@ -1975,7 +1975,7 @@ MonoBehaviour:
   fetch_localized_stat_value: 0
   dialogue_from: 0
   localized_key: 
-  text: Win
+  text: <b>You`re so cool!) Thanks you so much!</b>
   talking_beeps: {fileID: 0}
   darken_all_other_characters: 1
   bring_speaker_to_front: 1
@@ -7540,7 +7540,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 808138633}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &473725191
 MonoBehaviour:
@@ -9464,8 +9464,7 @@ MonoBehaviour:
   prefab: {fileID: 1340965330823172, guid: f5cb2a9cfa2501241ae4aa29db01974e, type: 3}
   questIcon: {fileID: 21300000, guid: a36b26cc201e4d841ae8b206289f5593, type: 3}
   questName: Save town
-  description: An example prefab for killing some enemies and getting some resource
-    rewards
+  description: Kill 3 space monsters.
   toolTip: 
   startAvailability: 0
   constantAvailability: 0
@@ -13829,10 +13828,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 857180926}
+  - {fileID: 982434291}
   - {fileID: 118871074}
   - {fileID: 473725190}
   - {fileID: 1387149270}
-  - {fileID: 982434291}
   m_Father: {fileID: 0}
   m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -14289,7 +14288,7 @@ MonoBehaviour:
   fetch_localized_stat_value: 0
   dialogue_from: 0
   localized_key: 
-  text: Bla
+  text: <b>Hello! Hello! I`m so glad to see you!) Can u save our town, please?</b>
   talking_beeps: {fileID: 0}
   darken_all_other_characters: 1
   bring_speaker_to_front: 1
@@ -17207,7 +17206,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 808138633}
-  m_RootOrder: 4
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &982434292
 MonoBehaviour:
@@ -21752,6 +21751,14 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7085392297843121161, guid: 73bee396b76e841e49bb612aadf8adda, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -9.9001465
+      objectReference: {fileID: 0}
+    - target: {fileID: 7085392297843138345, guid: 73bee396b76e841e49bb612aadf8adda, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.0014648438
+      objectReference: {fileID: 0}
     - target: {fileID: 7085392297843225521, guid: 73bee396b76e841e49bb612aadf8adda, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -23489,7 +23496,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 808138633}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1387149271
 MonoBehaviour:
@@ -33666,7 +33673,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_UiScaleMode: 0
   m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1.99
+  m_ScaleFactor: 2
   m_ReferenceResolution: {x: 1280, y: 720}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
@@ -35988,7 +35995,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Available Quests:'
+  m_Text: 
 --- !u!114 &114122569436668710
 MonoBehaviour:
   m_ObjectHideFlags: 0

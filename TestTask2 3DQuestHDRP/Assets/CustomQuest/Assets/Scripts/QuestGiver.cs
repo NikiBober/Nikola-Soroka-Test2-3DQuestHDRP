@@ -124,15 +124,16 @@ public class QuestGiver : MonoBehaviour
 
     void StartDialogue()
     {
-        QuestHandler.Instance.dialogueCamera.SetActive(true);
         hintCanvas.SetActive(false);
 
         if (QuestHandler.Instance.isQuestCompleed)
         {
+            QuestHandler.Instance.dialogueCamera.SetActive(true);
             winConversation.Start_Conversation();
         }
-        else
+        else if (!QuestHandler.Instance.isQuestAccepted)
         {
+            QuestHandler.Instance.dialogueCamera.SetActive(true);
             dialogueConversation.Start_Conversation();
         }
     }

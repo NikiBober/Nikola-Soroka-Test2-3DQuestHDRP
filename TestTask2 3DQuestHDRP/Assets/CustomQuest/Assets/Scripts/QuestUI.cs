@@ -1207,7 +1207,7 @@ public class QuestUI : MonoBehaviour
     {
         if (info.criteria && info.player)
         {
-            AddOnSreenMsg(5f, info.criteria.criteriaName + " " + info.criteria.playerProgression[info.player] + "/" + info.criteria.amount, 15, Color.white);
+            AddOnSreenMsg(5f, info.criteria.criteriaName + " " + info.criteria.playerProgression[info.player] + "/" + info.criteria.amount, 40, Color.white);
         }
     }
 

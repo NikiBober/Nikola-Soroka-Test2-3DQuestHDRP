@@ -12,6 +12,7 @@ public class QuestHandler : Manager<QuestHandler>
     public GameObject dialogueCamera;
 
     public bool isQuestCompleed;
+    public bool isQuestAccepted;
 
     #region Field
 
