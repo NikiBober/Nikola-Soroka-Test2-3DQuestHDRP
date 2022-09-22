@@ -13,9 +13,14 @@ public class QuestGiver : MonoBehaviour
     KeyCode actionKey;
 
     [SerializeField]
-    GameObject dialogueCamera;
+    VNEngine.ConversationManager dialogueConversation;
+
+    [SerializeField]
+    VNEngine.ConversationManager winConversation;
 
     CQPlayerObject player;
+
+    bool isPlayerInRange;
 
 
     /// <summary>
@@ -111,10 +116,24 @@ public class QuestGiver : MonoBehaviour
                 }
             }
         }
-        if (Input.GetKeyDown(actionKey))
+        if (isPlayerInRange && Input.GetKeyDown(actionKey))
         {
-            StartQuest();
-            dialogueCamera.SetActive(!dialogueCamera.activeSelf);
+            StartDialogue();
+        }
+    }
+
+    void StartDialogue()
+    {
+        QuestHandler.Instance.dialogueCamera.SetActive(true);
+        hintCanvas.SetActive(false);
+
+        if (QuestHandler.Instance.isQuestCompleed)
+        {
+            winConversation.Start_Conversation();
+        }
+        else
+        {
+            dialogueConversation.Start_Conversation();
         }
     }
 
@@ -134,11 +153,13 @@ public class QuestGiver : MonoBehaviour
         }
 
         hintCanvas.SetActive(true);
+        isPlayerInRange = true;
     }
 
     private void OnTriggerExit(Collider other)
     {
         hintCanvas.SetActive(false);
+        isPlayerInRange = true;
     }
 
     public void StartQuest()

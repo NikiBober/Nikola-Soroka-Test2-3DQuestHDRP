@@ -545,6 +545,8 @@ public class QuestUI : MonoBehaviour
                         }
                         if (cUI.amountDone.text == cUI.totalAmount.text) // if a criteria has been completed.
                         {
+                            QuestHandler.Instance.isQuestCompleed = true;
+
                             cUI.amountDone.gameObject.SetActive(false); // disable extra text and the  "/"
                             cUI.totalAmount.text = "Completed"; // change totalamount to say completed //  TODO:: test if this works with several quests.
                             cUI.totalAmount.color = Color.green; // change the colour of the word

@@ -139,8 +139,11 @@ public class QuestPopUp : MonoBehaviour
     /// </summary>
     public void AcceptQuest()
     {
+        QuestHandler.Instance.dialogueCamera.SetActive(false);
+
         QuestHandler.Instance.QuestsDiscovered(quest, player);
         Destroy(this.gameObject);
+
     }
 
     /// <summary>
@@ -148,6 +151,8 @@ public class QuestPopUp : MonoBehaviour
     /// </summary>
     public void DeclineQuest()
     {
+        QuestHandler.Instance.dialogueCamera.SetActive(false);
+
         Destroy(this.gameObject);
     }
 

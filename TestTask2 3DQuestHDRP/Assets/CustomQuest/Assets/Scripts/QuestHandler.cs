@@ -9,6 +9,10 @@ using UnityEngine.Events;
 /// </summary>
 public class QuestHandler : Manager<QuestHandler>
 {
+    public GameObject dialogueCamera;
+
+    public bool isQuestCompleed;
+
     #region Field
 
     /// <summary>
