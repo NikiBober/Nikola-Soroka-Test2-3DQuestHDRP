@@ -719,6 +719,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueCamera: {fileID: 201849651}
   isQuestCompleed: 0
+  isQuestAccepted: 0
   allQuests: []
   players: []
   selectedPlayer: {fileID: 812360252}
@@ -18210,6 +18211,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1893659511822568, guid: b18f8976219e1754dba4931c56a32810, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 114380483076639956, guid: b18f8976219e1754dba4931c56a32810, type: 3}
       propertyPath: alwaysDisplayMouse
       value: 1
@@ -19159,6 +19164,20 @@ MonoBehaviour:
   declineDistance: 5
   walkIntoStartQuest: 1
   questSymbol: {fileID: 1637186666}
+--- !u!136 &1118579184
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1118579180}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.30103955
+  m_Height: 1.8276473
+  m_Direction: 1
+  m_Center: {x: -0.0053199558, y: 0.9647999, z: 0}
 --- !u!4 &1120382389 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4421835410926952, guid: e7edecf7aecac7d42b38790d0dda1e6f, type: 3}
